@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     a[i] = atoi(argv[i+2]);
   }
 
-  cout<<"Before: ";
+  //cout<<"Before: ";
   display(a,n);
   if(sortType=="insertion") insertSort(a,n);
   else if(sortType=="bubble") bubbleSort(a,n);
