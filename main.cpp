@@ -8,9 +8,13 @@ using namespace std;
 int main(int argc, char **argv) {
   int i, j, n = argc-2;
   int *a;
+  if(argc < 3){
+        cerr << "Usage: " << argv[0] << " <sortType> <numbers...>" << endl;
+        return 1;
+    }//the pointer will not point to NULL when there's only 1 argc ex. ./sort
 
   string sortType = argv[1];
-  a = new int[n];//pointer
+  a=new int[n];//pointer
 
   for(i = 0; i<n; i++){
     a[i] = atoi(argv[i+2]);
@@ -24,7 +28,7 @@ int main(int argc, char **argv) {
   else if(sortType=="heap") heapSort(a,n);
 
   display(a,n);
-
+  
   delete[]a;
   return 0; 
 }
