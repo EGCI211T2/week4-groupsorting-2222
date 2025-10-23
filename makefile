@@ -7,4 +7,4 @@ run: $(DEPS)
 	 ./$(DEPS) $(var)
 
 clean:
-	 rm -f $(DEPS)
+	 rm $(DEPS)
