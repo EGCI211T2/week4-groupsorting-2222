@@ -1,6 +1,5 @@
 DEPS= sort
-compile: main.cpp sorting.h
-	 clear
+compile: main.cpp
 	 g++ main.cpp -o $(DEPS)
 
 run: $(DEPS)
