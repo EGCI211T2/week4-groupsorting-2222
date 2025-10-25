@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
   }
 
   //cout<<"Before: ";
- // display(a,n);
+  display(a,n);
   if(sortType=="insertion") insertSort(a,n);
   else if(sortType=="bubble") bubbleSort(a,n);
   else if(sortType=="selection") selectSort(a,n);
