@@ -73,7 +73,7 @@ void heapify(int a[], int n, int i) {
 }
 
 void heapSort(int a[], int n){
-  cout<<"Build a max heap: "<<endl;
+  //cout<<"Build a max heap: "<<endl;
     for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(a, n, i);
         display(a,n);
