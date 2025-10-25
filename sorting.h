@@ -1,9 +1,11 @@
 #include <iostream>
-void display(int a[],int n){
-    int i;
-    for(i=0;i<n;i++)
-      cout<<a[i]<<" ";
-    cout<<endl;
+#include <iomanip> // add this
+
+void display(int *a, int n) {
+    for (int i = 0; i < n; ++i) {
+        std::cout << std::setw(5) << a[i];
+    }
+    std::cout <<endl;
 }
 
 void swap(int &a,int &b){
