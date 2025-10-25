@@ -23,7 +23,7 @@ void selectSort(int a[], int n){
       }
     }
     swap(a[j],a[mi]);
-    display(a,n);
+    //display(a,n);
   }
 } 
 
@@ -36,8 +36,8 @@ void insertSort(int a[],int n){
       else break;
     }
     a[i+1] = value;
-    display(a,n);
-    cout<<"----------"<<endl;
+    //display(a,n);
+    //cout<<"----------"<<endl;
   }
 }
 
@@ -51,13 +51,9 @@ void bubbleSort(int a[],int n){
         swap(a[i], a[i+1]);
         sorted=0;
       }
-      display(a,n);
+      //display(a,n);
     }
-    if(sorted==1){
-      cout<<"It's already sorted"<<endl;
-      break;
-      }
-    cout<<"-------------"<<endl;
+    //cout<<"-------------"<<endl;
   }
 }
 
@@ -78,14 +74,14 @@ void heapSort(int a[], int n){
   cout<<"Build a max heap: "<<endl;
     for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(a, n, i);
-        display(a,n);
+        //display(a,n);
     }
     cout<<"-------------"<<endl;
 
     for (int i = n - 1; i > 0; i--) {
         swap(a[0], a[i]);
         heapify(a, i, 0);
-        display(a,n);
+        //display(a,n);
     }
     
 }
