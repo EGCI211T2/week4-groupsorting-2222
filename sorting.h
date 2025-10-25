@@ -1,8 +1,10 @@
 #include <iostream>
 void display(int a[],int n){
     int i;
-    for(i=0;i<n;i++)
-        cout<<a[i]<<" ";
+    for(i=0;i<n;i++){
+      cout<<a[i];
+      if(i < n - 1) cout << " ";
+    }
     cout<<endl;
 }
 
