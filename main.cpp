@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
   int i, j, n = argc-2;
   int *a;
   if(argc < 3){
-        cerr<<"Usage: "<<argv[0]<<" <sortType> <numbers...>"<< endl;
+        //cerr<<"Usage: "<<argv[0]<<" <sortType> <numbers...>"<< endl;
         return 1;
     }//the pointer will not point to NULL when there's only 1 argc ex. ./sort
 
@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
     a[i] = atoi(argv[i+2]);
   }
 
-  //cout<<"Before: ";
+  cout<<"Before: ";
   display(a,n);
   if(sortType=="insertion") insertSort(a,n);
   else if(sortType=="bubble") bubbleSort(a,n);
