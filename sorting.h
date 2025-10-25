@@ -1,10 +1,8 @@
 #include <iostream>
 void display(int a[],int n){
     int i;
-    for(i=0;i<n;i++){
-      cout<<a[i];
-      if(i < n - 1) cout << " ";
-    }
+    for(i=0;i<n;i++)
+      cout<<a[i]<<" ";
     cout<<endl;
 }
 
@@ -25,7 +23,7 @@ void selectSort(int a[], int n){
       }
     }
     swap(a[j],a[mi]);
-    //display(a,n);
+    display(a,n);
   }
 } 
 
@@ -38,8 +36,8 @@ void insertSort(int a[],int n){
       else break;
     }
     a[i+1] = value;
-    //display(a,n);
-    //cout<<"----------"<<endl;
+    display(a,n);
+    cout<<"----------"<<endl;
   }
 }
 
@@ -53,9 +51,9 @@ void bubbleSort(int a[],int n){
         swap(a[i], a[i+1]);
         sorted=0;
       }
-      //display(a,n);
+      display(a,n);
     }
-    //cout<<"-------------"<<endl;
+    cout<<"-------------"<<endl;
   }
 }
 
@@ -76,14 +74,14 @@ void heapSort(int a[], int n){
   cout<<"Build a max heap: "<<endl;
     for (int i = n / 2 - 1; i >= 0; i--) {
         heapify(a, n, i);
-        //display(a,n);
+        display(a,n);
     }
     cout<<"-------------"<<endl;
 
     for (int i = n - 1; i > 0; i--) {
         swap(a[0], a[i]);
         heapify(a, i, 0);
-        //display(a,n);
+        display(a,n);
     }
     
 }
